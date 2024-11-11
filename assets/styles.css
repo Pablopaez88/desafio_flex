@@ -11,7 +11,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f5f5f5;
+  background-color: #fff;
   overflow: hidden;
 }
 
@@ -32,8 +32,11 @@ html {
 
 .perfil {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  padding-bottom: 10px;
   margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
 }
 
 .perfil img {
@@ -63,17 +66,21 @@ html {
   color: #333;
 }
 
+.boton-chat-contenedor {
+  display: flex;
+  justify-content: center;
+}
+
 .boton-chat {
-  display: block;
-  width: 100%;
   padding: 10px;
-  margin-bottom: 20px;
-  background-color: #a392e7;
+  background-color: #a491d2;
   color: white;
   border: none;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
+  width: 97%;
+  margin-bottom: 10px;
 }
 
 .contactos {
@@ -86,6 +93,7 @@ html {
   align-items: center;
   padding: 10px 0;
   border-bottom: 1px solid #ddd;
+  cursor: pointer;
 }
 
 .contacto img {
@@ -95,44 +103,58 @@ html {
   margin-right: 10px;
 }
 
+.contacto-info {
+  display: flex;
+  flex-direction: column;
+}
+
 .contacto-info .nombre {
   font-weight: bold;
+  color: #444749;
+  font-size: 16px;
+  padding: 4px;
 }
 
 .contacto-info .mensaje {
-  font-size: 14px;
-  color: #666;
+  font-size: 10px;
+  color: #828485;
+  padding: 4px;
 }
 
 .centro-de-pagina {
-  width: 70%;
+  background-color: #e8ebe4;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 20px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
 }
 
 .intro .icono {
-  width: 100px;
-  height: 100px;
-  margin-bottom: 20px;
+  width: 33%;
 }
 
 .intro h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
-  color: #666;
+  font-size: 45px;
+  color: #1b1f21;
   margin-bottom: 10px;
 }
 
 .intro p {
-  font-size: 16px;
-  color: #333;
+  font-size: 14px;
+  color: #444749;
   max-width: 80%;
   line-height: 1.5;
-  text-align: justify;
 }
