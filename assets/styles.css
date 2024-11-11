@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
 }
 
 body,
@@ -28,6 +27,7 @@ html {
   padding: 20px;
   border-right: 1px solid #ddd;
   overflow-y: auto;
+  font-family: "Open Sans", sans-serif;
 }
 
 .perfil {
@@ -37,6 +37,7 @@ html {
   padding-bottom: 10px;
   margin-bottom: 20px;
   border-bottom: 1px solid #ddd;
+  cursor: pointer;
 }
 
 .perfil img {
@@ -83,17 +84,17 @@ html {
   margin-bottom: 10px;
 }
 
-.contactos {
-  overflow-y: auto;
-  max-height: calc(100vh - 200px);
-}
-
 .contacto {
   display: flex;
   align-items: center;
-  padding: 10px 0;
+  padding: 9px 0;
   border-bottom: 1px solid #ddd;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.contacto:hover {
+  background-color: #e8ebe4;
+  transform: scale(1.05);
 }
 
 .contacto img {
@@ -123,6 +124,7 @@ html {
 
 .centro-de-pagina {
   background-color: #e8ebe4;
+  font-family: "Roboto", serif;
   width: 100%;
   height: 100%;
   display: flex;
@@ -157,4 +159,13 @@ html {
   color: #444749;
   max-width: 80%;
   line-height: 1.5;
+}
+.boton-chat:focus {
+  background-color: #bec1bb;
+  transform: scale(1);
+}
+
+.boton-chat:hover {
+  background-color: #cdc3e6;
+  transform: scale(1);
 }
